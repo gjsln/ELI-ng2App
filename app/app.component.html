@@ -3,7 +3,7 @@
 	    <div class="form-group">
 	      <div class="input-group">
 	        <div class="input-group-addon"><i class="fa fa-search"></i></div>
-	        <input type="text" class="form-control" placeholder="Search Name">
+	        <input type="text" name="search" class="form-control" placeholder="Search Name" [(ngModel)]="queryString">
 	      </div>      
 	    </div>
 	</form>
@@ -20,7 +20,14 @@
       </tr>
     </thead>
     <tbody>
-      <tr></tr>
+      <tr *ngFor="let studs of stud | SearchPipe:queryString">
+        <td>{{ studs.fname }}</td>
+        <td>{{ studs.lName }}</td>
+		    <td>{{ studs.age }}</td>
+        <td>{{ studs.gender }}</td>
+        <td>{{ studs.address }}</td>        
+        <td><img [src]="studs.studImage" height="50" width="50"/></td>
+      </tr>
     </tbody>
   </table>
 </div>
