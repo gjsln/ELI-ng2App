@@ -47,7 +47,7 @@
     "canonical-path": "0.0.2",
     "http-server": "^0.9.0",
     "tslint": "^3.7.4",
-    "lodash": "^4.11.1",
+    "lodash": "^4.17.11",
     "jasmine-core": "~2.4.1",
     "karma": "^1.2.0",
     "karma-chrome-launcher": "^0.2.3",
@@ -59,6 +59,6 @@
   },
   "repository": {
 	"type":"git",
-	"url":"https://github.com/gnanaveln/ELI-ng2App.git"
+	"url":"https://github.com/gjsln/ELI-ng2App.git"
   }
 }
